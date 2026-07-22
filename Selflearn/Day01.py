@@ -2,6 +2,6 @@ def start(a,b):
     print(f"{a} is your name")
     print(f"{b} is your surname")
 
-user = input("Enter your name")
+user = input("Enter your vorname")
 user1 = input("Enter your surname") 
 start(user,user1)
