@@ -1,11 +1,24 @@
-def start(a,b):
-    print(f"{a} is your name")
-    print(f"{b} is your surname")
+"This is Day 01 of learning python"
+"Learning from Corey Schafer"
 
-<<<<<<< HEAD
-user = input("Enter your vorname")
-=======
-user = input("Enter your first name")
->>>>>>> main
-user1 = input("Enter your surname") 
-start(user,user1)
+#Date : 22-07-2026
+
+message  = "Hello World"
+print(message[2:4]) #index slicing
+
+#String Method
+"""""
+print(message.lower())
+print(message.upper())
+
+"""
+#Using f string
+getname = input("Enter your name: ")
+print(f"""Hello {getname},
+      How are you doing ?
+      Best,
+      Team""")
+
+# using format methodd
+print ("{} Welcome".format(getname))
+
