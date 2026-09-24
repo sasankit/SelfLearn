@@ -30,7 +30,6 @@
 #num = 5
 #print(type(num))
 
-<<<<<<< HEAD
 #date : 23/09/2026 #day02
 
 #Integer, Float, Boolean
@@ -41,9 +40,3 @@
 #typecasting
 
 #num1 = int(input("Enter a number: "))
-=======
-num1 = '100'
-num2 = '200'
-
-print(num1 + num2)
->>>>>>> 08f851e0156c806db7d3b1e14b46f7dc4556b78f
