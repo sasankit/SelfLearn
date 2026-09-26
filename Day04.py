@@ -78,17 +78,101 @@
 
 #Exercise: Build a guess game, you have 3 chances if you guessed it right, you win else you lose:
 
-secret_num = 8
-total_chance = 3
-start = 1
+# secret_num = 8
+# total_chance = 3
+# start = 1
 
-while start <= total_chance:
-    guess = int(input("Guess the number: "))
-    start += 1    
+# while start <= total_chance:
+#     guess = int(input("Guess the number: "))
+#     start += 1    
 
-    if guess == secret_num:
-        print("Congratulations, you guessed it right, you win") 
+#     if guess == secret_num:
+#         print("Congratulations, you guessed it right, you win") 
+#         break
+# else:
+#     print("Try again !!!")
+
+
+#Exercise: Build a car game:
+# when Help is entered, we give this output, 
+# Start - to start the car
+# stop: to stop the car
+# quit - to exit
+
+# is_started = False
+
+# print("Type 'help' for options !!! ")
+
+# while True:
+#     user_input = input("Enter to begin, press help for more info.. ").lower()
+
+#     if user_input == "help" or user_input == "h":
+#         print(
+#             """
+#             Start - to start the car
+#             Stop - to stop the car
+#             quit - to quit the game
+#             """
+#             )
+#     elif user_input == "start" or user_input == "s":
+#         if is_started:
+#             print("Car has already Started !!!")
+#         else: 
+#             is_started = True
+#             print("Car started...ready to go")
+
+#     elif user_input == "stop":
+#         if not is_started:
+#             print("Car is already Stopped...") 
+#         else:
+#             is_started = False
+#             print("Car stopped...")
+
+#     elif user_input == "quit" or user_input == "q":
+#         print("Exiting game..")
+#         break
+# else:
+#     print("I dont understand, press 'help' for options")   
+    
+#Explanation:Game Launches: is_started = False (Car is off).
+# Player types "start":Program checks: 
+# Is is_started True? -> No, it's False.
+# It goes to the else block: changes is_started = True and prints "Car started... ready to go!".
+
+# Player types "start" again:
+# Program checks: Is is_started True? -> Yes, it's True.
+# It prints: "Car is already started!" (preventing duplicate starts).
+
+# Player types "stop":
+# Program checks: Is not is_started True? -> Since is_started is currently True, not is_started evaluates to False.
+
+# Because the if condition is False, it drops into the else block: changes is_started = False and prints "Car stopped.".
+# Player types "stop" again:
+# Program checks: Is not is_started True? $\rightarrow$ Since is_started is now False, not False evaluates to True.
+# It enters the if block and prints: "Car is already stopped!".
+
+
+is_started = False
+
+while True:
+    user = input("press start to begin...").lower()
+
+    if user == "start":
+        if is_started:
+            print("car has already started")
+        else:
+            is_started = True
+            print("car has started")
+
+    elif user == "stop":
+        if is_started:
+            is_started = False
+            print("car has stopped")
+        else:
+            print("Car has already stopped")
+    elif user == "quit":
+        print("exit")
         break
 else:
-    print("Try again !!!")
-    
+    print("Invalid")
+
