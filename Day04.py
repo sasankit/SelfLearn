@@ -152,27 +152,67 @@
 # It enters the if block and prints: "Car is already stopped!".
 
 
-is_started = False
+# is_started = False
 
-while True:
-    user = input("press start to begin...").lower()
+# while True:
+#     user = input("press start to begin...").lower()
 
-    if user == "start":
-        if is_started:
-            print("car has already started")
-        else:
-            is_started = True
-            print("car has started")
+#     if user == "start":
+#         if is_started:
+#             print("car has already started")
+#         else:
+#             is_started = True
+#             print("car has started")
 
-    elif user == "stop":
-        if is_started:
-            is_started = False
-            print("car has stopped")
-        else:
-            print("Car has already stopped")
-    elif user == "quit":
-        print("exit")
-        break
-else:
-    print("Invalid")
+#     elif user == "stop":
+#         if is_started:
+#             is_started = False
+#             print("car has stopped")
+#         else:
+#             print("Car has already stopped")
+#     elif user == "quit":
+#         print("exit")
+#         break
+# else:
+#     print("Invalid")
+
+#***********************************
+#For Loop
+
+# item = [1,2,3]
+# for i in item:
+#     print(i)
+
+# for i in range(5,10): #using range function 
+#     print(i)
+
+# total = 0
+# prices = [10,20,30]
+# for price in prices:
+#     total += price
+# print(total)
+
+# Nested Loops
+
+# for x in range(4):
+#     for y in range(3):
+#         print(f"{x}, {y}")
+
+#Exercise: print the following
+# *****
+# **
+# *****
+# **
+# **
+
+num = [5,2,5,2,2]
+# for i in num:
+#     print(i * "*")
+
+# for i in num:
+#     output = ""
+#     for j in range(i):
+#         output += "x"
+#     print(output)
+
 
