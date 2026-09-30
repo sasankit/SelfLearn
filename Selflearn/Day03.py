@@ -91,7 +91,11 @@
 # items = ["mango","apple","banana","apple"]
 # unique_items = list(dict.fromkeys(items)) #dict.fromkeys() is used to remove duplicates and its fast.
 
-
+# a = [1,2,3]
+# b = a # b is an instance of a, whatevery you update in b is also gets updated in a
+# print(b)
+# b.append(4)
+# print(a)
 
 
 #Tuple - Ordered and immutable (cannot be changed)
@@ -99,7 +103,7 @@
 # tuple = (1,2,5,6)
 # tuple1 = tuple
 
-# tuple[0] = (5)
+# tuple[0] = 5
 # print(tuple)
 
 # Lists are mutable.
@@ -145,31 +149,50 @@
 # "4": "four"
 # }
 
-# userinput = input("Enter your phone: ")
-# output = ""
-# for i in userinput:
-#     output += phone.get(i,"!") + " "
+# # userinput = input("Enter your phone: ")
+# # output = ""
+# # for i in userinput:
+# #     output += phone.get(i,"!") + " "
 
-# print(output)
+# # print(output)
 
 
-# Emoji Converter
+# # Emoji Converter
 
-emoji = {
-":)" : "😊",
-":D" : "😁",
-"<3" : "❤️"
+# emoji = {
+# ":)" : "😊",
+# ":D" : "😁",
+# "<3" : "❤️"
 
-}
+# }
 
-msg = input("Enter your message: ")
-response = ""
-separate = msg.split()
-for item in separate:
-    response += emoji.get(item,item) + " "
-print(response)
+# msg = input("Enter your message: ")
+# response = ""
+# separate = msg.split()
+# for item in separate:
+#     response += emoji.get(item,item) + " "
+# print(response)
     
 
+# ch = "mississippi"
+# count = {}
+# for i in ch:
+#   count[i] = count.get(i,0) + 1
+# repeat = max(count, key=count.get)
+# print(count)
+# print(repeat)    
+
+# original = {"a": 1, "b": 2, "c": 1}
+# inverted = {}
+
+# for key, value in original.items():
+#   print(key, value)
+
+
+# #without using .items()
+#   for key in original:
+#     value = original[key]
+#     print(key,value)
 
 # Reverse string
 # name = input("Enter your name: ")

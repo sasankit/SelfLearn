@@ -21,11 +21,37 @@
 #Error handling in Python: 
 # try , except, finally
 
-try:
-    num1 = int(input("Enter a number: "))
-    print(1/num1)
-except ZeroDivisionError:
-    print("Enter number above zero")
-except ValueError:
-    print("Enter only number")
+# try:
+#     num1 = int(input("Enter a number: "))
+#     print(1/num1)
+# except ZeroDivisionError:
+#     print("Enter number above zero")
+# except ValueError:
+#     print("Enter only number")
 
+
+# standard practice for positional argument and keyword arguments
+# *args and **kwargs
+
+# def student(*args, **kwargs):
+#     print(args)
+#     print(kwargs)
+
+
+# student(["hello" , "how are you"], name = "tom")
+
+# courses = ["Math","Science"]
+# detail = {
+# 'name' : 'Tom',
+# 'age' : 20
+
+# }
+
+# student(*courses,**detail)
+
+
+def calculate(a):
+    total = a * 2.80
+    return total
+
+print(calculate(50))
