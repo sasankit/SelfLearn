@@ -49,9 +49,3 @@
 
 # student(*courses,**detail)
 
-
-def calculate(a):
-    total = a * 2.80
-    return total
-
-print(calculate(50))
