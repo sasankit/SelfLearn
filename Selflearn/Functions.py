@@ -2,13 +2,13 @@
 
 # BMI Calculator
 
-# def bmi_calculator(name, height_m, weight_kg):
-#     bmi = weight_kg / (height_m ** 2)
-#     print(f"Your BMI is: {bmi}")
-#     if bmi < 25:
-#         print(f"Mr/Ms {name}, you are not overweight")
-#     else:
-#         print(f"Mr/Ms {name}, you are overweight")
+def bmi_calculator(name, height_m, weight_kg):
+    bmi = weight_kg / (height_m ** 2)
+    print(f"Your BMI is: {bmi}")
+    if bmi < 25:
+        print(f"Mr/Ms {name}, you are not overweight")
+    else:
+        print(f"Mr/Ms {name}, you are overweight")
 
 
 
@@ -48,4 +48,6 @@
 # }
 
 # student(*courses,**detail)
+
+
 
